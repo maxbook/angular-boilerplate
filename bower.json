@@ -1,0 +1,29 @@
+{
+  "name": "kuizy-angular",
+  "authors": [
+    "Max Bryselbout <max.bryselbout@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.8",
+    "angular-sanitize": "~1.4.8",
+    "font-awesome": "~4.4.0",
+    "animate.css": "~3.4.0",
+    "angular-animate": "~1.4.8",
+    "angular-cookies": "~1.4.8"
+  }
+}
