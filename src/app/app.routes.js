@@ -6,7 +6,8 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url:'/',
-        templateUrl: 'app/components/home/home.tpl.html'
+        templateUrl: 'app/components/home/home.tpl.html',
+        controller : 'homeCtrl'
       })
       .state('404', {
         url:'/404',

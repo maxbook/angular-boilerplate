@@ -1,62 +1,72 @@
-# Structure
+# Angular boilerplate
+
+## Install
+
+#### Gulp
+```
+npm install
+```
+
+#### Bower
+```
+bower install
+```
+
+## Cmd
+
+#### Development & serve
+```
+gulp
+```
+
+#### Build production
+```
+gulp build
+```
+
+
+## Structure /src
 ```
 .
 ├── app
 │   ├── app.module.js
 |   ├── app.routes.js
+|   ├── app.template.js // Precompiled template cache
 │   ├── common
-│   │   ├── controllers
-│   │   ├── directives
-│   │   ├── filters
-│   │   └── services
+│   │   └── directives
+│   │       └── name-directive
+│   ├── partials
+│   │   └── header
+│   │       ├── header.less
+│   │       └── header.tpl.html
 │   └── components
-│       ├── survey
-│       │   ├── controllers
-│       │   │   ├── FirstCtrl.js
-│       │   │   └── SecondCtrl.js
-│       │   ├── directives
-│       │   │   └── directive1.js
-│       │   ├── filters
-│       │   │   ├── filter1.js
-│       │   │   └── filter2.js
-│       │   ├── services
-│       │   │   ├── service1.js
-│       │   │   └── service2.js
-│       │   └── views
-│       │       └── view.html
-│       ├── dashboard
-│       │   ├── controllers
-│       │   │   ├── FirstCtrl.js
-│       │   │   └── SecondCtrl.js
-│       │   ├── directives
-│       │   │   └── directive1.js
-│       │   ├── filters
-│       │   │   ├── filter1.js
-│       │   │   └── filter2.js
-│       │   ├── services
-│       │   │   ├── service1.js
-│       │   │   └── service2.js
-│       │   └── views
-│       │       └── view.html
-│       └── signup
-│       │   ├── controllers
-│       │   │   ├── FirstCtrl.js
-│       │   │   └── SecondCtrl.js
-│       │   ├── directives
-│       │   │   └── directive1.js
-│       │   ├── filters
-│       │   │   ├── filter1.js
-│       │   │   └── filter2.js
-│       │   ├── services
-│       │   │   ├── service1.js
-│       │   │   └── service2.js
-│       │   └── views
-│       │       └── view.html
+│       ├── home
+│       │   ├── home.less
+│       │   ├── home.tpl.html
+│       │   └── homeCtrl.js
+│       └── 404
+│           └── 404.tpl.html
 ├── assets
 │   ├── css
+│   │   └── master.css // App compiled css
 |   ├── less
-│   ├── js
-|   └── img
-└── lib
+│   │   ├── reset.less
+│   │   ├── variables_mixins.less
+│   │   ├── typography.less
+│   │   ├── layout.less
+│   │   └── master.less // Common css properties
+|   └── img // All image assets
+└── lib // Bower directory
 ```
-# ROUTES
+
+## Structure /dist (after build)
+```
+.
+├── index.html
+└── assets
+    ├── css
+    │   └── master.css
+    ├── js
+    │   └── app.js
+    └── img
+```

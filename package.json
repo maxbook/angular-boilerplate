@@ -1,5 +1,5 @@
 {
-  "name": "kuizy-angular",
+  "name": "app-angular",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -10,13 +10,25 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.2.2",
-    "css-mqpacker": "^4.0.0",
     "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.8.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-less": "^3.0.5",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-postcss": "^6.0.1",
+    "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.3.1",
-    "postcss-unprefix": "git+https://github.com/yisibl/postcss-unprefix.git"
+    "gulp-cssnano": "^2.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-postcss": "^6.0.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-useref": "^3.0.4",
+    "postcss-unprefix": "git+https://github.com/yisibl/postcss-unprefix.git",
+    "run-sequence": "^1.1.5",
+    "del": "^2.2.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+
   }
 }

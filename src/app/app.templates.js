@@ -1,0 +1,3 @@
+angular.module("app").run(["$templateCache", function($templateCache) {$templateCache.put("app/components/404/404.tpl.html","<h1>404</h1>\n<h2>Page non trouvée</h2>\n");
+$templateCache.put("app/components/home/home.tpl.html","<div ng-include=\"\'app/partials/header/header.tpl.html\'\">\n\n</div>\n<h2 id=\"test\">Hello {{test}}</h2>\n");
+$templateCache.put("app/partials/header/header.tpl.html","<h1 id=\"header\">HEADER</h1>\n");}]);
