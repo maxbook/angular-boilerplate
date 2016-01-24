@@ -117,7 +117,7 @@ gulp.task('build:concat-src', function () {
 gulp.task('build:script', function () {
   return gulp.src(files.js)
     .pipe(concat('app.min.js'))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(files.dev.js));
 });
 
@@ -161,7 +161,7 @@ gulp.task('development', ['build:dev','connect'] , function() {
       'reload'
     );
   });
-  gulp.watch(files.html, ['reload']);
+  gulp.watch(files.html, ['build:angular-template-cache','reload']);
   gulp.watch(files.js, function(callback) {
     runSequence(
       'inject-dependency',

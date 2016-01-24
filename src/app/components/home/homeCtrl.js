@@ -1,3 +1,12 @@
-angular.module('app').controller('homeCtrl', function($scope) {
-  $scope.test = 'world !';
-});
+(function() {
+  'use strict';
+
+  angular
+    .module('app')
+    .controller('homeCtrl', homeCtrl);
+
+  function homeCtrl() {
+    var vm = this;
+    vm.test = 'world !';
+  }
+})();
